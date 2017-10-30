@@ -1,5 +1,4 @@
 header {
-  padding-top: 24px;
   padding-bottom: 18px;
   width: 100%;
 }
@@ -8,6 +7,7 @@ main {
   padding-left: 18px;
   padding-right: 18px;
 }
+
 img {
   max-width: 100%;
   display:block;
@@ -25,6 +25,7 @@ h2 {
   margin-bottom: 0;
   padding-left: 12px;
 }
+
 p{
   line-height:150%;
 }
@@ -52,46 +53,16 @@ footer {
   width: 100%;
 }
 
+hr {
+  clear: both;
+}
+
 .template {
   display: none;
 }
 
-@media only screen and ( min-width: 640px ) {
-  .icon-menu {
-    display:none;
-  }
-
-  .main-nav ul li {
-    display:inline-block;
-    border-bottom:none;
-    padding-right: 15px;
-  }
-
-  .main-nav ul {
-    padding-left: 30px;
-  }
-
-  .pull-right {
-    float: right;
-  }
-
-  .pull-left {
-    float: left;
-  }
-
-  p {
-  font-weight:500;
-  font-size: 135%;
-  }
-
-  img {
-    margin:0;
-  }
-
-  .clearfix:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
 }

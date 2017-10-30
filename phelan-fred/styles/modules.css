@@ -1,17 +1,31 @@
 .site-header {
   background: #ffe8aa;
-  position: relative;
 }
 
 .icon-menu {
-  position: absolute;
-  top: 2.5px;
-  right: 1.5px;
-  font-size: 48px;
+  float: right;
+  font-size: 8vw;
+}
+
+.heading-group-h1 {
+  float: left;
+  width: 90%;
+}
+
+.main-nav {
+  height: 8vw;
+}
+
+.main-nav:hover {
+  height: auto;
 }
 
 .main-nav li {
   display: none;
+}
+
+.main-nav ul {
+  clear: both;
 }
 
 .main-nav:hover ul li {
@@ -56,4 +70,59 @@ address {
 
 .pull-right:first {
   margin-top: 0;
+}
+
+#filters {
+  list-style-type: none;
+}
+
+.read-on {
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+@media only screen and ( min-width: 640px ) {
+  .icon-menu {
+    display:none;
+  }
+
+  .main-nav ul li {
+    display:inline-block;
+    border-bottom:none;
+    padding-right: 15px;
+  }
+
+  .main-nav ul {
+    padding-left: 30px;
+  }
+
+  .pull-right {
+    float: right;
+  }
+
+  .pull-left {
+    float: left;
+  }
+
+  p {
+  font-weight:500;
+  font-size: 135%;
+  }
+
+  img {
+    margin:0;
+  }
+
+  .main-nav {
+    height: auto;
+  }
+
+  .heading-group-h1 {
+    float: none;
+  }
+
+  .main-nav:hover ul li {
+    display: inline-block;
+  }
 }
